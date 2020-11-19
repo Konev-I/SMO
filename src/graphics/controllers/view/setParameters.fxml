@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="graphics.controllers.SetParametersController">
+    <children>
+        <Label layoutX="239.0" layoutY="120.0" prefHeight="34.0" prefWidth="322.0" text="Установка параметров системы" textAlignment="JUSTIFY" underline="true">
+            <font>
+                <Font name="Calibri Light" size="24.0" />
+            </font>
+        </Label>
+        <Button fx:id="b_Cancel" layoutX="255.0" layoutY="455.0" mnemonicParsing="false" text="Назад" />
+      <Button fx:id="b_Set" layoutX="470.0" layoutY="455.0" mnemonicParsing="false" text="Установить" />
+      <Label layoutX="239.0" layoutY="175.0" text="Количество источников">
+         <tooltip>
+            <Tooltip text="Установите количество источиков, которое вы хотите просимулировать" />
+         </tooltip>
+      </Label>
+      <Label layoutX="238.0" layoutY="210.0" text="Количество приборов">
+         <tooltip>
+            <Tooltip text="Установите количество приборов, которое вы хотите просимулировать" />
+         </tooltip>
+      </Label>
+      <Label layoutX="239.0" layoutY="245.0" text="Размер очереди">
+         <tooltip>
+            <Tooltip text="Установите размер очереди для симуляции" />
+         </tooltip>
+      </Label>
+      <Label layoutX="238.0" layoutY="279.0" text="Коэффициент альфа">
+         <tooltip>
+            <Tooltip text="Установка этого коэффициента определяет скорость создания заявки (чем меньше, тем быстрее заявка появится)" />
+         </tooltip>
+      </Label>
+      <Label layoutX="238.0" layoutY="315.0" prefHeight="18.0" prefWidth="112.0" text="Коэффициент бета">
+         <tooltip>
+            <Tooltip text="Установка этого коэффициента определяет скорость создания заявки (чем меньше, тем быстрее заявка появится)" />
+         </tooltip>
+      </Label>
+      <Label layoutX="238.0" layoutY="353.0" prefHeight="18.0" prefWidth="123.0" text="Коэффициент лямбда">
+         <tooltip>
+            <Tooltip text="Установка этого коэффициента определяет скорость обработки заявки (чем меньше, тем быстрее заявка обработается)" />
+         </tooltip>
+      </Label>
+      <Label layoutX="238.0" layoutY="386.0" prefHeight="18.0" prefWidth="145.0" text="Время окончания работы">
+         <tooltip>
+            <Tooltip text="Установите время окончания симуляции" />
+         </tooltip>
+      </Label>
+      <TextField fx:id="f_numOfSources" layoutX="413.0" layoutY="171.0">
+         <tooltip>
+            <Tooltip text="Установите количество источиков, которое вы хотите просимулировать" />
+         </tooltip>
+      </TextField>
+      <TextField fx:id="f_numOfDevices" layoutX="413.0" layoutY="206.0">
+         <tooltip>
+            <Tooltip text="Установите количество приборов, которое вы хотите просимулировать" />
+         </tooltip>
+      </TextField>
+      <TextField fx:id="f_sizeOfQueue" layoutX="413.0" layoutY="241.0">
+         <tooltip>
+            <Tooltip text="Установите размер очереди для симуляции" />
+         </tooltip>
+      </TextField>
+      <TextField fx:id="f_alpha" layoutX="413.0" layoutY="275.0">
+         <tooltip>
+            <Tooltip text="Установка этого коэффициента определяет скорость создания заявки (чем меньше, тем быстрее заявка появится)" />
+         </tooltip>
+      </TextField>
+      <TextField fx:id="f_beta" layoutX="413.0" layoutY="312.0">
+         <tooltip>
+            <Tooltip text="Установка этого коэффициента определяет скорость создания заявки (чем меньше, тем быстрее заявка появится)" />
+         </tooltip>
+      </TextField>
+      <TextField fx:id="f_lambda" layoutX="413.0" layoutY="349.0">
+         <tooltip>
+            <Tooltip text="Установка этого коэффициента определяет скорость обработки заявки (чем меньше, тем быстрее заявка обработается)" />
+         </tooltip>
+      </TextField>
+      <TextField fx:id="f_finalTime" layoutX="413.0" layoutY="383.0">
+         <tooltip>
+            <Tooltip text="Установите время окончания симуляции" />
+         </tooltip>
+      </TextField>
+      <Text fx:id="f_status" layoutX="313.0" layoutY="451.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Изменений не было!" textAlignment="CENTER" wrappingWidth="156.8000366210938" />
+    </children>
+</AnchorPane>

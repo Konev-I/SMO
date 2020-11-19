@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="858.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="graphics.controllers.AutoModeController">
+   <children>
+      <Line endX="757.4000244140625" endY="-1.0" layoutX="101.0" layoutY="540.0" startX="-101.0" />
+      <Button fx:id="b_back" layoutX="14.0" layoutY="560.0" mnemonicParsing="false" text="Назад" />
+      <Button fx:id="b_start" layoutX="335.0" layoutY="547.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="188.0" text="Запустить" />
+      <TableView fx:id="t_Sources" prefHeight="403.0" prefWidth="858.0">
+        <columns>
+          <TableColumn fx:id="c_Sources" prefWidth="67.99999696016312" text="Источник" />
+          <TableColumn fx:id="c_NumOfRequest" prefWidth="94.39999389648438" text="Кол-во заявок" />
+            <TableColumn fx:id="c_Rejected" prefWidth="69.60003662109375" text="Отклонено" />
+            <TableColumn fx:id="c_Complete" prefWidth="76.79998779296875" text="Обслужено" />
+            <TableColumn fx:id="c_ProbOfReject" prefWidth="98.39996337890625" text="Вероятн. отказа" />
+            <TableColumn fx:id="c_AverageInSyst" prefWidth="103.199951171875" text="Ср. вр. в сист." />
+            <TableColumn fx:id="c_AverageWaiting" prefWidth="84.00009155273438" text="Ср. вр. ожид." />
+            <TableColumn fx:id="c_AverageService" prefWidth="104.0" text="Ср. вр. обслуж." />
+            <TableColumn fx:id="c_DispWaiting" prefWidth="79.2000732421875" text="Дисп. ожид." />
+            <TableColumn fx:id="c_DispService" prefWidth="79.199951171875" text="Дисп. обсл." />
+        </columns>
+      </TableView>
+      <TableView fx:id="t_Devices" layoutY="403.0" prefHeight="136.0" prefWidth="858.0">
+        <columns>
+          <TableColumn fx:id="c_Device" prefWidth="75.0" text="Прибор" />
+          <TableColumn fx:id="c_UsingFactor" prefWidth="186.40003967285156" text="Коэффициент использования" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
