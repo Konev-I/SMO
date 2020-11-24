@@ -4,6 +4,7 @@ public class DeviceStatistic {
   public int numOfDevice;
   public double usingFactor;
   public boolean isWorking;
+  public String pointer;
 
   public DeviceStatistic(int numOfDevice){
     this.numOfDevice = numOfDevice;
@@ -19,5 +20,9 @@ public class DeviceStatistic {
 
   public boolean getIsWorking(){
     return isWorking;
+  }
+
+  public String getPointer(){
+    return pointer;
   }
 }

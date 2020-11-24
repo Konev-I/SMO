@@ -8,12 +8,12 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="858.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="graphics.controllers.StepModeController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="graphics.controllers.StepModeController">
    <children>
-      <Line endX="757.4000244140625" endY="-1.0" layoutX="101.0" layoutY="540.0" startX="-101.0" />
+      <Line endX="798.4000244140625" endY="-0.5999755859375" layoutX="101.0" layoutY="540.0" startX="-101.0" />
       <Button fx:id="b_back" layoutX="14.0" layoutY="560.0" mnemonicParsing="false" text="Назад" />
       <Button fx:id="b_step" layoutX="335.0" layoutY="547.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="188.0" text="Сделать шаг" />
-      <TableView fx:id="t_Sources" prefHeight="333.0" prefWidth="858.0">
+      <TableView fx:id="t_Sources" prefHeight="334.0" prefWidth="900.0">
         <columns>
           <TableColumn fx:id="c_Sources" prefWidth="67.99999696016312" text="Источник" />
           <TableColumn fx:id="c_NumOfRequest" prefWidth="94.39999389648438" text="Кол-во заявок" />
@@ -27,20 +27,21 @@
             <TableColumn fx:id="c_DispService" prefWidth="79.199951171875" text="Дисп. обсл." />
         </columns>
       </TableView>
-      <TableView fx:id="t_Devices" layoutY="333.0" prefHeight="206.0" prefWidth="294.0">
+      <TableView fx:id="t_Devices" layoutY="333.0" prefHeight="206.0" prefWidth="318.0">
         <columns>
-          <TableColumn fx:id="c_Device" prefWidth="75.0" text="Прибор" />
-            <TableColumn fx:id="c_IsWorking" prefWidth="75.0" text="Работает" />
-          <TableColumn fx:id="c_UsingFactor" prefWidth="141.60003662109375" text="Коэфф. использования" />
+          <TableColumn fx:id="c_Device" prefWidth="51.19998323917389" text="Прибор" />
+            <TableColumn fx:id="c_IsWorking" prefWidth="56.800018310546875" text="Работает" />
+            <TableColumn fx:id="c_Pointer" prefWidth="66.40001678466797" text="Указатель" />
+          <TableColumn fx:id="c_UsingFactor" prefWidth="141.6000518798828" text="Коэфф. использования" />
         </columns>
       </TableView>
-      <Label layoutX="311.0" layoutY="393.0" text="Текущее время:" />
-      <Label layoutX="300.0" layoutY="433.0" text="Текущее событие:" />
-      <Label layoutX="382.0" layoutY="459.0" prefHeight="18.0" prefWidth="22.0" text="От:" />
-      <Text fx:id="text_CurrTime" layoutX="406.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text fx:id="text_CurrEvent" layoutX="406.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text fx:id="text_CurrSource" layoutX="406.0" layoutY="473.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <TableView fx:id="t_Buffer" layoutX="583.0" layoutY="332.0" prefHeight="206.0" prefWidth="274.0">
+      <Label layoutX="333.0" layoutY="394.0" text="Текущее время:" />
+      <Label layoutX="322.0" layoutY="434.0" text="Текущее событие:" />
+      <Label layoutX="404.0" layoutY="460.0" prefHeight="18.0" prefWidth="22.0" text="От:" />
+      <Text fx:id="text_CurrTime" layoutX="428.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fx:id="text_CurrEvent" layoutX="428.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fx:id="text_CurrSource" layoutX="428.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <TableView fx:id="t_Buffer" layoutX="625.0" layoutY="333.0" prefHeight="206.0" prefWidth="274.0">
         <columns>
           <TableColumn fx:id="c_Queue" prefWidth="41.60003662109375" text="Место" />
           <TableColumn fx:id="c_SourceNum" prefWidth="109.60009765625" text="Номер источника" />

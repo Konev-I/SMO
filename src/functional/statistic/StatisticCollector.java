@@ -1,10 +1,7 @@
 package functional.statistic;
 
 import functional.Simulator;
-import functional.functionalClasses.Buffer;
-import functional.functionalClasses.Device;
-import functional.functionalClasses.Event;
-import functional.functionalClasses.Request;
+import functional.functionalClasses.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -99,6 +96,12 @@ public class StatisticCollector {
     for(Device device: devices){
       statistic[device.getNumOfDevice()].usingFactor = 1 - device.getFreeTime() / Simulator.getFinalTime();
       statistic[device.getNumOfDevice()].isWorking = device.isWorking();
+      if(Simulator.getPointerOnCurrentDevice().getValue() == device.getNumOfDevice()){
+        statistic[device.getNumOfDevice()].pointer = "✓";
+      }
+      else {
+        statistic[device.getNumOfDevice()].pointer = "";
+      }
       devData.add(statistic[device.getNumOfDevice()]);
     }
     return devData;

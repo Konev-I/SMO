@@ -6,4 +6,8 @@ public class PointerOnCurrentDevice {
   public PointerOnCurrentDevice(int val){
     this.value = val;
   }
+
+  public int getValue() {
+    return value;
+  }
 }

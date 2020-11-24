@@ -83,6 +83,9 @@ public class StepModeController {
   private TableColumn<DeviceStatistic, Boolean> c_IsWorking;
 
   @FXML
+  private TableColumn<DeviceStatistic, String> c_Pointer;
+
+  @FXML
   private TableColumn<DeviceStatistic, Double> c_UsingFactor;
 
   @FXML
@@ -121,10 +124,12 @@ public class StepModeController {
 
     c_Device.setCellValueFactory(new PropertyValueFactory<>("numOfDevice"));
     c_IsWorking.setCellValueFactory(new PropertyValueFactory<>("isWorking"));
+    c_Pointer.setCellValueFactory(new PropertyValueFactory<>("pointer"));
     c_UsingFactor.setCellValueFactory(new PropertyValueFactory<>("usingFactor"));
 
     c_Queue.setCellValueFactory(new PropertyValueFactory<>("numOfPlace"));
     c_SourceNum.setCellValueFactory(new PropertyValueFactory<>("numOfSource"));
+    c_TimeOfGeneration.setCellValueFactory(new PropertyValueFactory<>("timeOfGeneration"));
     Simulator.runSimulation(0);
 
     b_step.setOnAction(event -> {

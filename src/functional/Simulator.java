@@ -56,6 +56,10 @@ public class Simulator {
     return lambda;
   }
 
+  public static PointerOnCurrentDevice getPointerOnCurrentDevice(){
+    return pointerOnCurrentDevice;
+  }
+
   public static void setParameters(int numOfSources_, int numOfDevices_, int sizeOfQueue_, double alpha_, double beta_,
                                     double lambda_, double finalTime_) {
       numOfSources = numOfSources_;
